@@ -5,7 +5,11 @@
 
 ## Screenshots
 
-![]()
+![](https://github.com/luvsunlight/sweet-heart/blob/master/screenshots/main.png)
+
+![](https://github.com/luvsunlight/sweet-heart/blob/master/screenshots/dashboard.png)
+
+![](https://github.com/luvsunlight/sweet-heart/blob/master/screenshots/music.png)
 
 ## Change Log
 
