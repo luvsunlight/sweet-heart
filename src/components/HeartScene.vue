@@ -7,7 +7,6 @@
 </template>
 
 <script>
-// import * as THREE from 'three'
 import OBJLoader from "three-obj-loader";
 import OrbitControls from "../js/OrbitControl.js";
 

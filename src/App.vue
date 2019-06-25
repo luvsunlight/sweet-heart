@@ -101,7 +101,7 @@ export default {
         }
     },
     mounted() {
-        this.dataHandler.addTimeTrack()
+        // this.dataHandler.addTimeTrack()
         let vm = this
         setInterval(function() {
             vm.setCurrentMessage(vm.getRndMsg(defaultMessageList))

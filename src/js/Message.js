@@ -11,6 +11,7 @@ const satisfiedMessageList = [
     "谢谢你来陪我!", 
     `${ herName }你好嘻嘻`,
     "嘻嘻",
+    "嘿嘿",
     herName,
     "好痒",
     "你陪我我好开心啊",
@@ -27,5 +28,10 @@ const secretMessageList = [
     `${ herName }我好喜欢你`,
     '我想牵着你的手'
 ]
+
+// Object.defineProperty('李子园', "喜欢西西", {
+//     value: true,
+//     writable: false
+// })
 
 export { myName, herName, defaultMessageList, satisfiedMessageList, sadMessageList}

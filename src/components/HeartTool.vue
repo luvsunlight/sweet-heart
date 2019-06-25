@@ -1,5 +1,5 @@
 <template>
-    <div class="tool">
+    <div class="tool" :class="toolClass">
         <img
             :src="toolSrc"
             :alt="toolAlt"
@@ -9,9 +9,13 @@
 </template>
 
 <script>
+import animate from "animate.css"
+
 export default {
     data() {
-        return {};
+        return {
+            bounce: false
+        }
     },
     props: {
         name: String,
@@ -20,6 +24,7 @@ export default {
     },
     methods: {
         toggle() {
+            this.bounce = !this.bounce
             if (this.clickValue !== 0) this.$emit("calHP", this.clickValue)
             if (this.name == "util") this.$emit("toggleTool")
             if (this.name == "locate") this.$emit("toggleMap")
@@ -28,14 +33,20 @@ export default {
     },
     computed: {
         toolSrc() {
-            let name = this.name;
-            return `./src/assets/${this.name}.png`;
+            let name = this.name
+            return `./src/assets/${ this.name }.png`
         },
         toolAlt() {
-            return `${this.name}.png`;
+            return `${this.name}.png`
+        },
+        toolClass() {
+            return {
+                animated: this.name !== "util",
+                bounce: this.bounce && this.name !== "util"
+            }
         }
     }
-};
+}
 </script>
 
 <style scoped>
